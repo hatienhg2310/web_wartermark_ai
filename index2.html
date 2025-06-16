@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infographic: Toàn Cảnh Watermark Âm Thanh Suno AI</title>
+    <title>Watermark Âm Thanh Suno AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -198,8 +198,8 @@
                             <p class="text-slate-600">Dùng AI khác tạo lại bản nhạc chỉ đơn thuần là thay thế watermark cũ bằng một watermark mới từ AI đó.</p>
                         </div>
                         <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500">
-                            <h4 class="font-bold text-xl mb-1">Biến Đổi Thủ Công</h4>
-                            <p class="text-slate-600">Các kỹ thuật như EQ, Pitch Shift... làm giảm nghiêm trọng chất lượng âm thanh nhưng watermark vẫn tồn tại.</p>
+                            <h4 class="font-bold text-xl mb-1">Biến Đổi Thủ Công( Phần mềm Abode Auditon)</h4>
+                            <p class="text-slate-600">Các kỹ thuật như EQ, Pitch Shift trong Abode Auditon làm giảm nghiêm trọng chất lượng âm thanh nhưng watermark vẫn tồn tại.</p>
                         </div>
                     </div>
                 </div>
@@ -228,13 +228,13 @@
             </div>
         </section>
         <div class="section">
-            <h2 class="section-title">🧪 Thử nghiệm với AI Audio Fingerprint Remover</h2>
+            <h2 class="section-title">🧪 Thử nghiệm với AI Audio Fingerprint Remover với 10 bản âm thanh của AI Suno và 20 bản âm thanh do con người mix lại từ AI </h2>
             
             <div class="test-item">
                 <h4>a. Chế độ Moderate (--level moderate)</h4>
                 <p><strong>Kết quả:</strong></p>
                 <div class="metrics-row">
-                    <span class="metric">280 watermark phát hiện</span>
+                    <span class="metric">260-280 watermark được phát hiện</span>
                     <span class="metric">401 giây xử lý</span>
                     <span class="metric">534MB bộ nhớ</span>
                 </div>
@@ -245,31 +245,31 @@
                 <h4>b. Chế độ Extreme (--level extreme)</h4>
                 <p><strong>Kết quả:</strong></p>
                 <div class="metrics-row">
-                    <span class="metric">280 watermark phát hiện</span>
+                    <span class="metric">280 -321 watermark được phát hiện</span>
                     <span class="metric">375 giây xử lý</span>
                     <span class="metric">472MB bộ nhớ</span>
                 </div>
-                <p class="warning"><strong>Cảnh báo:</strong> Adaptive filter design failed: Wn[0] must be less than Wn[1]</p>
+                <p class="warning"><strong>Cảnh báo:</strong> Adaptive filter design failed: Wn[0] must be less than Wn[1]( lỗi bộ lọc)</p>
             </div>
 
             <div class="test-item">
                 <h4>c. Chế độ Aggressive (--level aggressive)</h4>
                 <p><strong>Kết quả:</strong></p>
                 <div class="metrics-row">
-                    <span class="metric">280 watermark phát hiện</span>
-                    <span class="metric">379 giây xử lý</span>
-                    <span class="metric">470MB bộ nhớ</span>
+                    <span class="metric">321-340 watermark phát hiện</span>
+                    <span class="metric">412 giây xử lý</span>
+                    <span class="metric">926MB bộ nhớ</span>
                     <span class="metric">7 metadata loại bỏ</span>
                 </div>
             </div>
 
             <div class="test-item">
                 <h4>🔍 Xác minh đầu ra (--verify)</h4>
-                <p>File đầu ra có mã hash khác biệt hoàn toàn so với file gốc:</p>
+                <p>File đầu ra có mã hash khác biệt hoàn toàn so với file gốc, đây chính là những watermark AI được mã hóa lại.</p>
                 <div class="hash-comparison">
-                    Original file hash: 8561527e...<br>
-                    Processed file hash: 35ed93d9...<br>
-                    <strong class="files-different">Files are different</strong>
+                    Original file hash:  8561527e9a385ecc9eefd54c3dd6da7dce33f4b04d6f80dc93b78966a9f2e648<br>
+                    Processed file hash: 35ed93d95b424f980d878a0f9d7045415afdb821589fc2809de6705275f980fe<br>
+                    <strong class="files-different">Kết quả : là mã hóa dạng đặc biệt.( update sau việc dịch ngược các mã hóa này).</strong>
                 </div>
             </div>
         </div>
